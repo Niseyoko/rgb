@@ -1,0 +1,51 @@
+/* ページ全体の基本的なスタイル設定 */
+body {
+    font-family: sans-serif;
+    display: flex; /* Flexboxを使用して中央揃えを実現 */
+    flex-direction: column; /* 要素を縦に並べる */
+    align-items: center; /* 水平方向の中央揃え */
+    padding: 20px;
+}
+
+/* 問題表示エリアのスタイル */
+#question-area {
+    margin-bottom: 20px;
+}
+
+/* 各問題（色の見本と入力欄のペア）のスタイル */
+.question {
+    display: flex; /* 横並びにする */
+    align-items: center; /* 垂直方向の中央揃え */
+    margin-bottom: 10px;
+}
+
+/* 色の見本ボックスのスタイル */
+.color-box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc; /* 枠線 */
+    margin-right: 10px;
+}
+
+/* 回答入力欄のスタイル */
+.answer-input {
+    width: 100px;
+    padding: 5px;
+}
+
+/* 送信ボタンと再挑戦ボタン共通のスタイル */
+#submit-button, #retry-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer; /* カーソルをポインターにする */
+    margin-top: 10px;
+}
+
+/* 結果表示エリアのスタイル */
+#result-area {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}

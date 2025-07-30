@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>絶対RGB感テスト</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>絶対RGB感テスト</h1>
+    <p>先頭の#は不要 16進数6桁で回答</p>
+
+    <div id="question-area">
+    </div>
+
+    <button id="submit-button" disabled>回答を送信</button>
+
+    <div id="result-area" style="display:none;">
+        <h2>結果</h2>
+        <p>RGB誤差 (平均): <span id="rgb-error"></span></p>
+        <p>HSL誤差 (平均): <span id="hsl-error"></span></p>
+        <p>※H: 色相, S: 彩度, L: 明度</p>
+        <p>絶対RGB感スコア: <span id="rmse-score"></span>%</p>
+        <button id="retry-button">もう一度挑戦</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
